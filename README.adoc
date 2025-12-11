@@ -1,49 +1,76 @@
-= UPM - Universal Project Manager (Archived)
+= Universal-Project-Manager
+Jonathan D.A. Jewell <jonathan.jewell@gmail.com>
+:toc: macro
+:icons: font
+:source-highlighter: rouge
+:experimental:
+:url-github: https://github.com/hyperpolymath/Universal-Project-Manager
+:url-gitlab: https://gitlab.com/hyperpolymath/Universal-Project-Manager
+:url-bitbucket: https://bitbucket.org/hyperpolymath/Universal-Project-Manager
+:url-codeberg: https://codeberg.org/hyperpolymath/Universal-Project-Manager
 
-> "He must so to speak throw away the ladder, after he has climbed up on it."
-> — Wittgenstein, Tractatus 6.54
+Universal project management integration
 
-== Status: Superseded
+image:https://img.shields.io/badge/RSR-Certified-gold[RSR Certified]
+image:https://img.shields.io/badge/License-AGPL%20v3-blue[License]
 
-75% complete. 58 blockers. The blockers were the message.
+toc::[]
 
-This project has been *archived*. Its purpose has been absorbed by:
-- *Conative Gating* - Enforcement
-- *STATE.scm* - Per-project checkpoints
-- *ECOSYSTEM.scm* - Cross-project coordination
-- *policy.ncl* - Single source of truth for rules
+== Overview
 
-== The Lesson
+Universal-Project-Manager is part of the link:https://rhodium.sh[Rhodium Standard] (RSR) ecosystem.
 
-Complex orchestration machinery is a symptom of enforcement failure. When AI assistants actually follow policy, you don't need elaborate systems to manage the chaos they create.
+Domain: *software-development*
 
-== What This Was
+== Installation
 
-A comprehensive, language-agnostic CI/CD framework that automatically detected project configurations and provided unified scripts for building, testing, and deploying across multiple platforms.
+[source,bash]
+----
+# Clone from GitHub (primary)
+git clone {url-github}
 
-*Features it had:*
-- Auto-Detection - Automatically detect languages, package managers, test frameworks
-- Multi-Language Support - JavaScript/TypeScript, Python, Ruby, Go, Rust, Java, C/C++, etc.
-- Platform Agnostic - GitHub Actions and GitLab CI
-- Mirror Sync - Event-driven repository mirroring
-- Unified Scripts - Single set of scripts across CI platforms
+# Or from mirrors
+git clone {url-gitlab}
+git clone {url-codeberg}
+----
 
-== Useful Patterns Preserved
+== RSR Stack
 
-The CI scripts (`ci-scripts/`) contain useful patterns for:
-- Project detection (`detect.sh`)
-- Multi-language setup (`setup.sh`)
-- Platform-agnostic testing (`test.sh`)
-- Repository mirroring (`sync-mirror.sh`)
+This project follows RSR conventions:
 
-These patterns may be referenced by future projects but are not actively maintained.
+* ✅ ReScript for frontend/logic
+* ✅ Deno for JS runtime
+* ✅ WASM for performance-critical code
+* ✅ Rust/OCaml/Haskell for systems/proofs
+* ✅ Guile/Scheme for configuration
+* ❌ No TypeScript
+* ❌ No Go
+* ❌ No npm
 
-== See Also
+== Mirrors
 
-- [Conative Gating](https://github.com/hyperpolymath/conative-gating) - The enforcement mechanism
-- [elegant-STATE](https://github.com/hyperpolymath/elegant-STATE) - Simplified state management
-- [STATE.scm](./STATE.scm) - Final project state
+[cols="1,2"]
+|===
+| Platform | URL
+
+| GitHub (primary) | {url-github}
+| GitLab | {url-gitlab}
+| Bitbucket | {url-bitbucket}
+| Codeberg | {url-codeberg}
+|===
 
 == License
 
-MIT
+Licensed under AGPL-3.0-or-later OR LicenseRef-Palimpsest-0.5.
+
+See link:LICENSE[LICENSE] for details.
+
+== Contributing
+
+See link:CONTRIBUTING.adoc[CONTRIBUTING.adoc].
+
+== Metadata
+
+* Domain: software-development
+* Framework: RSR (Rhodium Standard Repository)
+* Dublin Core: link:.well-known/dc.xml[.well-known/dc.xml]
